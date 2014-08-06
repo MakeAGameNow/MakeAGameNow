@@ -262,13 +262,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750e0267811a24534b294e946d053c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingie: {fileID: 100000, guid: 4eb98b2d04d6b4d91b6c8d7816d20d1f, type: 2}
-  minHorizontal: -10
-  maxHorizontal: 10
+  thingie: {fileID: 100000, guid: c4e8760e04e5f46d7930946343562c50, type: 2}
+  minHorizontal: -50
+  maxHorizontal: 50
   minVertical: 0
   maxVertical: 0
-  minSpawnTime: 1
-  maxSpawnTime: 1
+  minSpawnTime: .100000001
+  maxSpawnTime: .5
 --- !u!4 &1018036297
 Transform:
   m_ObjectHideFlags: 0
@@ -276,7 +276,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1018036295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 50}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
