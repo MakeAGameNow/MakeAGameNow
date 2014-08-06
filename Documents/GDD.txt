@@ -7,7 +7,7 @@ Controls:
 The game is controlled by pressing two buttons (Or pressing the left or right side of the screen on mobile platforms).  The left button makes the player character move laterally to the left, and the right button makes them move laterally to the right.
 
 Obstacles:
-Cubes.  Spheres.  Pyramids.  Cones.
+Cubes.  Spheres.  Pyramids.  Cones.  Cylinder.
 
 Level variations:
 Inside of a tube?
