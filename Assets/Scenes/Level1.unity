@@ -150,6 +150,7 @@ GameObject:
   - 23: {fileID: 295872999}
   - 114: {fileID: 295873004}
   - 54: {fileID: 295873003}
+  - 114: {fileID: 295873005}
   m_Layer: 0
   m_Name: HiroProtagonist
   m_TagString: Player
@@ -235,6 +236,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
+--- !u!114 &295873005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295872998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341a0587ec8b54f22b097f4547efe240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cycleTime: 1
+  saturation: 1
+  brightness: 1
 --- !u!1 &297199741
 GameObject:
   m_ObjectHideFlags: 0
