@@ -12,12 +12,12 @@ SceneSettings:
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
-  m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 1, g: 1, b: 1, a: 1}
   m_FogMode: 3
-  m_FogDensity: .00999999978
+  m_FogDensity: .0399999991
   m_LinearFogStart: 0
-  m_LinearFogEnd: 300
+  m_LinearFogEnd: 20
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: da976b1a4f7ebb949b0f71341e4f1821, type: 2}
   m_HaloStrength: .5
@@ -265,6 +265,7 @@ MonoBehaviour:
   pointsPerUnitTravelled: 1
   gameSpeed: 10
   titleScreenName: TitleScreen
+  previousScore: 0
 --- !u!4 &297199743
 Transform:
   m_ObjectHideFlags: 0
@@ -337,7 +338,7 @@ GameObject:
   - 114: {fileID: 1146306949}
   - 114: {fileID: 1146306950}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,7 +356,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 7fe6537e3a9654677b1ca046a4a6ad00, type: 2}
+  - {fileID: 2100000, guid: 2f5ce808a1ad241ff8170bd91bd56004, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -391,7 +392,7 @@ Transform:
   m_GameObject: {fileID: 1146306944}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
   m_LocalPosition: {x: 0, y: 0, z: 495}
-  m_LocalScale: {x: 1000, y: 1000.00012, z: 1}
+  m_LocalScale: {x: 1000, y: 1000.00018, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -469,8 +470,8 @@ Camera:
   m_GameObject: {fileID: 1310748422}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
