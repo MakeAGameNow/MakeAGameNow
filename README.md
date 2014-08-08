@@ -10,13 +10,10 @@ http://creativecommons.org/licenses/by/4.0/
 If you use this content in your own projects, please give credit to:
 
 
-Maximilian Maroe
-
-www.cookingwithunity.com
-
-Licensed under Creative Commons: By Attribution 4.0 International
-
-http://creativecommons.org/licenses/by/4.0/
+Maximilian Maroe  
+www.cookingwithunity.com  
+Licensed under Creative Commons: By Attribution 4.0 International  
+http://creativecommons.org/licenses/by/4.0/  
 
 
 Thank you!
