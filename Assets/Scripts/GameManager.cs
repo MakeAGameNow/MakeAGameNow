@@ -70,9 +70,25 @@ public class GameManager : MonoBehaviour
 					previousScore = (int)score;
 					hasSaved = true;
 				}
-				if(Input.anyKeyDown)
+
+				if(!IsMobile())
 				{
-					Application.LoadLevel(titleScreenName);
+					if(Input.anyKeyDown)
+					{
+						Application.LoadLevel(titleScreenName);
+					}
+				}
+				else
+				{
+					foreach(Touch touch in Input.touches)
+					{
+						if(touch.phase == TouchPhase.Began)
+						{
+							Debug.Log("Touched in GameManager");
+							Debug.Log("Touch count: " + Input.touchCount);
+							Application.LoadLevel(titleScreenName);
+						}
+					}
 				}
 			}
 
@@ -122,6 +138,22 @@ public class GameManager : MonoBehaviour
 			{
 				GUILayout.Label("Game Over!  Press any key to quit!");
 			}
+		}
+	}
+
+	public static bool IsMobile()
+	{
+		//if(Application.platform = RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.LinuxPlayer || Application.platform == RuntimePlatform.MetroPlayerX64 || Application.platform == RuntimePlatform.MetroPlayerX86 || Application.platform == RuntimePlatform.WindowsPlayer 
+		if(Application.platform == RuntimePlatform.IPhonePlayer ||
+		    Application.platform == RuntimePlatform.Android ||
+		    Application.platform == RuntimePlatform.BlackBerryPlayer ||
+		    Application.platform == RuntimePlatform.MetroPlayerARM)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
 		}
 	}
 }
