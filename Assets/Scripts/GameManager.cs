@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour
 
 	private float score = 0.0f;
 	private static float highScore = 0.0f;
+
+	private int[] highScores = new int[5];
+
 	private bool gameOver = false;
 	private bool hasSaved = false;
 
@@ -119,13 +122,41 @@ public class GameManager : MonoBehaviour
 
 	void SaveHighScore()
 	{
-		PlayerPrefs.SetInt("Highscore", (int)highScore);
+		int highSlot = -1;
+
+		//Just determining the score we beat, if any
+		for(int i = 0; i < highScores.Length; i++)
+		{
+			if(highScores[i] < highScore)
+			{
+				highSlot = i;
+				break;
+			}
+		}
+		if(highSlot != -1)
+		{
+			for(int i = highScores.Length - 1; i > highSlot; i--)
+			{
+				highScores[i] = highScores[i-1];
+			}
+			highScores[highSlot] = (int)highScore;
+		}
+
+		//Save high score list
+		for(int i = 0; i < highScores.Length; i++)
+		{
+			PlayerPrefs.SetInt("HighScore" + i.ToString(), highScores[i]);
+		}
+
 		PlayerPrefs.Save();
 	}
 
 	void LoadHighScore()
 	{
-		highScore = PlayerPrefs.GetInt("Highscore");
+		for(int i = 0; i < highScores.Length; i++)
+		{
+			highScores[i] = PlayerPrefs.GetInt("HighScore" + i.ToString());
+		}
 	}
 
 	void OnGUI()
