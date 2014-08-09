@@ -135,6 +135,7 @@ public class GameManager : MonoBehaviour
 		}
 		if(highSlot != -1)
 		{
+			//NOTE FOR MAX: probably >= on highslot
 			for(int i = highScores.Length - 1; i > highSlot; i--)
 			{
 				highScores[i] = highScores[i-1];
