@@ -165,6 +165,7 @@ public class GameManager : MonoBehaviour
 
 	void OnGUI()
 	{
+		/*
 		if(Application.loadedLevelName != titleScreenName &&
 		   Application.loadedLevelName != highScoresScreenName)
 		{
@@ -177,6 +178,7 @@ public class GameManager : MonoBehaviour
 				GUILayout.Label("Game Over!  Press any key to quit!");
 			}
 		}
+		*/
 	}
 
 	public static bool IsMobile()
