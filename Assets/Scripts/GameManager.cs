@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
 
 	public float pointsPerUnitTravelled = 1.0f;
 	public float gameSpeed = 10.0f;
+	public float gameSpeedIncreasePerSecond = 1.0f;
 	public string titleScreenName = "TitleScreen";
 	public string highScoresScreenName = "HighScores";
 
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
 
 	private bool gameOver = false;
 	private bool hasSaved = false;
+	private float initialGameSpeed;
 
 	// Use this for initialization
 	void Start ()
@@ -54,6 +56,7 @@ public class GameManager : MonoBehaviour
 			}
 		}
 		LoadHighScore();
+		initialGameSpeed = gameSpeed;
 		DontDestroyOnLoad(gameObject);
 	}
 	
@@ -105,6 +108,7 @@ public class GameManager : MonoBehaviour
 				{
 					highScore = score;
 				}
+				gameSpeed += gameSpeedIncreasePerSecond * Time.deltaTime;
 			}
 		}
 		else
@@ -119,6 +123,7 @@ public class GameManager : MonoBehaviour
 		score = 0.0f;
 		gameOver = false;
 		hasSaved = false;
+		gameSpeed = initialGameSpeed;
 	}
 
 	void SaveHighScore()
@@ -161,11 +166,12 @@ public class GameManager : MonoBehaviour
 		{
 			highScores.Add(PlayerPrefs.GetInt("HighScore" + i.ToString()));
 		}
+
+		highScore = PlayerPrefs.GetInt ("HighScore0");
 	}
 
 	void OnGUI()
 	{
-		/*
 		if(Application.loadedLevelName != titleScreenName &&
 		   Application.loadedLevelName != highScoresScreenName)
 		{
@@ -178,7 +184,6 @@ public class GameManager : MonoBehaviour
 				GUILayout.Label("Game Over!  Press any key to quit!");
 			}
 		}
-		*/
 	}
 
 	public static bool IsMobile()
