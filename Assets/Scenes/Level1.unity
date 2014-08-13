@@ -404,6 +404,7 @@ GameObject:
   - 4: {fileID: 642859463}
   - 114: {fileID: 642859462}
   - 114: {fileID: 642859464}
+  - 114: {fileID: 642859465}
   m_Layer: 0
   m_Name: SpecialFX
   m_TagString: Untagged
@@ -449,11 +450,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd2d40dd0fc54cab802c10c59a1ff5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  samples: 64
-  channel: 0
   frequencyChannel: 16
   amplitudeMultiplier: 13.3400002
+--- !u!114 &642859465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642859461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709846775a9634147b5a6f0ec2b1353c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  samples: 64
+  channel: 0
   window: 2
+  data: []
 --- !u!1 &1018036295
 GameObject:
   m_ObjectHideFlags: 0

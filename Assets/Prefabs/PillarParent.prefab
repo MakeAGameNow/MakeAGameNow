@@ -31,6 +31,7 @@ GameObject:
   - 136: {fileID: 13600000}
   - 23: {fileID: 2300000}
   - 54: {fileID: 5400002}
+  - 114: {fileID: 11400010}
   m_Layer: 9
   m_Name: Pillar
   m_TagString: Untagged
@@ -282,6 +283,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f892336e04f464dbe527a0097c85d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb0c0779ea354a05bd73406f42a793b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  samples: 64
+  channel: 0
+  frequencyChannel: 16
+  amplitudeMultiplier: 13.3400002
+  window: 2
+  randomizeFrequencyChannel: 1
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
