@@ -1,18 +1,14 @@
 High Concept:
 A 3rd person object dodging game using two buttons where you avoid obstacles that fly at you from a forward direction in 3 dimensions!
 
-Story:
-
 Controls:
 The game is controlled by pressing two buttons (Or pressing the left or right side of the screen on mobile platforms).  The left button makes the player character move laterally to the left, and the right button makes them move laterally to the right.
 
 Obstacles:
-Cubes.  Spheres.  Pyramids.  Cones.  Cylinder.
+Cylinders!
 
-Level variations:
-Inside of a tube?
-
-Notes:
-I’d like to get some 2d elements in this game as well as the 3d.  Maybe the main character can be a sprite, ala Space Harrier.
-
-Weapons?
+Save it for the sequel:
+	More obstacles: Cubes.  Spheres.  Pyramids.  Cones.
+	Level variations: Inside of a tube!
+	I’d like to get some 2d elements in this game as well as the 3d.  Maybe the main character can be a sprite, ala Space Harrier.
+	Weapons?
