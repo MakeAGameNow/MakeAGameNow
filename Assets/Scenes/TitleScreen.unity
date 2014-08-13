@@ -158,6 +158,7 @@ GameObject:
   - 65: {fileID: 399625127}
   - 23: {fileID: 399625126}
   - 114: {fileID: 399625125}
+  - 114: {fileID: 399625130}
   m_Layer: 0
   m_Name: HighscoresButtonButton
   m_TagString: Untagged
@@ -228,6 +229,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 812269701}
   m_RootOrder: 0
+--- !u!114 &399625130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 399625124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341a0587ec8b54f22b097f4547efe240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorPropertyName: _Color
+  speed: .100000001
+  hue: .333333343
+  saturation: 1
+  brightness: 1
 --- !u!1 &489391246
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +285,7 @@ GameObject:
   - 65: {fileID: 540760871}
   - 23: {fileID: 540760870}
   - 114: {fileID: 540760873}
+  - 114: {fileID: 540760874}
   m_Layer: 0
   m_Name: StartButtonButton
   m_TagString: Untagged
@@ -338,6 +356,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Level1
+--- !u!114 &540760874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540760868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341a0587ec8b54f22b097f4547efe240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorPropertyName: _Color
+  speed: .100000001
+  hue: 0
+  saturation: 1
+  brightness: 1
 --- !u!1 &766597723
 GameObject:
   m_ObjectHideFlags: 0

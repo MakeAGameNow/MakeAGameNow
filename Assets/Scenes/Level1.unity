@@ -565,13 +565,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 1076580371}
   - 33: {fileID: 1076580370}
-  - 64: {fileID: 1076580369}
   - 23: {fileID: 1076580368}
   - 114: {fileID: 1076580367}
   - 114: {fileID: 1076580366}
   - 114: {fileID: 1076580365}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: GroundGrid8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -604,7 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a7bcce638a741f1aa7065d1575ac0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: -1
 --- !u!114 &1076580367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4f9abcec7614ab6a1a0272759a5dee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0, y: 1}
+  speed: {x: 0, y: -1}
 --- !u!23 &1076580368
 Renderer:
   m_ObjectHideFlags: 0
@@ -637,35 +636,22 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!64 &1076580369
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1076580364}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1076580370
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1076580364}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1076580371
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1076580364}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 0, y: -.0199999996, z: 495}
-  m_LocalScale: {x: 1000, y: 1000, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.0199999996, z: 48}
+  m_LocalScale: {x: 20, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -678,13 +664,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 1146306948}
   - 33: {fileID: 1146306947}
-  - 64: {fileID: 1146306946}
   - 23: {fileID: 1146306945}
   - 114: {fileID: 1146306949}
   - 114: {fileID: 1146306950}
   - 114: {fileID: 1146306951}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: GroundGrid32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -710,35 +695,22 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!64 &1146306946
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1146306944}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1146306947
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1146306944}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1146306948
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1146306944}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 0, y: 0, z: 495}
-  m_LocalScale: {x: 1000, y: 1000.00018, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 48}
+  m_LocalScale: {x: 20, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -753,7 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4f9abcec7614ab6a1a0272759a5dee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0, y: 1}
+  speed: {x: 0, y: -1}
 --- !u!114 &1146306950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,7 +737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a7bcce638a741f1aa7065d1575ac0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: -1
 --- !u!114 &1146306951
 MonoBehaviour:
   m_ObjectHideFlags: 0
