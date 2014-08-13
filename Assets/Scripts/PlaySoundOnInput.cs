@@ -12,7 +12,6 @@ public class PlaySoundOnInput : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		//This moves our object left or right based on keyboardinput
 		if(Input.GetAxis("Horizontal") != 0.0f || PseudoInput.Instance.leftPressed || PseudoInput.Instance.rightPressed)
 		{
 			if(!audio.isPlaying)
