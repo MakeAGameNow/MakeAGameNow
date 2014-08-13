@@ -25,16 +25,12 @@ public class GameManager : MonoBehaviour
 	public float pointsPerUnitTravelled = 1.0f;
 	public float gameSpeed = 10.0f;
 	public string titleScreenName = "TitleScreen";
-	public string highScoresScreenName = "HighScores";
 
 	[HideInInspector]
 	public int previousScore = 0;
 
 	private float score = 0.0f;
 	private static float highScore = 0.0f;
-
-	private int[] highScores = new int[5];
-
 	private bool gameOver = false;
 	private bool hasSaved = false;
 
@@ -59,8 +55,7 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if(Application.loadedLevelName != titleScreenName &&
-		   Application.loadedLevelName != highScoresScreenName)
+		if(Application.loadedLevelName != titleScreenName)
 		{
 			if(GameObject.FindGameObjectWithTag("Player") == null)
 			{
@@ -122,48 +117,18 @@ public class GameManager : MonoBehaviour
 
 	void SaveHighScore()
 	{
-		int highSlot = -1;
-
-		//Just determining the score we beat, if any
-		for(int i = 0; i < highScores.Length; i++)
-		{
-			if(highScores[i] < highScore)
-			{
-				highSlot = i;
-				break;
-			}
-		}
-		if(highSlot != -1)
-		{
-			//NOTE FOR MAX: probably >= on highslot
-			for(int i = highScores.Length - 1; i > highSlot; i--)
-			{
-				highScores[i] = highScores[i-1];
-			}
-			highScores[highSlot] = (int)highScore;
-		}
-
-		//Save high score list
-		for(int i = 0; i < highScores.Length; i++)
-		{
-			PlayerPrefs.SetInt("HighScore" + i.ToString(), highScores[i]);
-		}
-
+		PlayerPrefs.SetInt("Highscore", (int)highScore);
 		PlayerPrefs.Save();
 	}
 
 	void LoadHighScore()
 	{
-		for(int i = 0; i < highScores.Length; i++)
-		{
-			highScores[i] = PlayerPrefs.GetInt("HighScore" + i.ToString());
-		}
+		highScore = PlayerPrefs.GetInt("Highscore");
 	}
 
 	void OnGUI()
 	{
-		if(Application.loadedLevelName != titleScreenName &&
-		   Application.loadedLevelName != highScoresScreenName)
+		if(Application.loadedLevelName != titleScreenName)
 		{
 			int currentScore = (int)score;
 			int currentHighScore = (int)highScore;
