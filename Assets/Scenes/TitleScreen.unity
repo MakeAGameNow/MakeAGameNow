@@ -463,6 +463,8 @@ MonoBehaviour:
   titleScreenName: TitleScreen
   highScoresScreenName: HighScores
   previousScore: 0
+  score: 0
+  gameOver: 0
 --- !u!4 &766597726
 Transform:
   m_ObjectHideFlags: 0
