@@ -276,6 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
   scoreValue: 0
+  destroyTarget: {fileID: 1271252817}
 --- !u!114 &295873005
 MonoBehaviour:
   m_ObjectHideFlags: 0
