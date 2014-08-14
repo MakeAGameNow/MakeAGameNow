@@ -387,7 +387,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
       minMaxState: 0
-    cnt0: 1000
+    cnt0: 500
     cnt1: 30
     cnt2: 30
     cnt3: 30
@@ -1134,7 +1134,7 @@ ParticleSystem:
     collidesWith:
       serializedVersion: 2
       m_Bits: 4294967295
-    quality: 0
+    quality: 1
     voxelSize: .5
     collisionMessages: 0
   SubModule:
