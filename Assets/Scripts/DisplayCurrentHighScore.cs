@@ -15,6 +15,6 @@ public class DisplayCurrentHighScore : MonoBehaviour
 
 	void Update()
 	{
-		textMesh.text = label + GameManager.highScore;
+		textMesh.text = label + (int)GameManager.highScore;
 	}
 }
