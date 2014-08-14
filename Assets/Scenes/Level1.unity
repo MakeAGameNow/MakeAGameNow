@@ -619,6 +619,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -1
+  dashSpeed: -3
+  dashDuration: .75
+  doubleTapSpeed: .200000003
 --- !u!114 &1076580367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,6 +756,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -1
+  dashSpeed: -3
+  dashDuration: .75
+  doubleTapSpeed: .200000003
 --- !u!114 &1146306951
 MonoBehaviour:
   m_ObjectHideFlags: 0

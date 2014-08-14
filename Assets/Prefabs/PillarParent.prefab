@@ -247,9 +247,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -10
-  dashSpeed: -20
-  dashDuration: 2
-  doubleTapSpeed: .5
+  dashSpeed: -30
+  dashDuration: .75
+  doubleTapSpeed: .200000003
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
