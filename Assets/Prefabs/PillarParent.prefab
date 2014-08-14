@@ -247,6 +247,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -10
+  dashSpeed: -20
+  dashDuration: 2
+  doubleTapSpeed: .5
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -294,11 +297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb0c0779ea354a05bd73406f42a793b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  samples: 64
-  channel: 0
   frequencyChannel: 16
   amplitudeMultiplier: 13.3400002
-  window: 2
   randomizeFrequencyChannel: 1
 --- !u!136 &13600000
 CapsuleCollider:
