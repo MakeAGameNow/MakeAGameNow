@@ -12,11 +12,18 @@ public class MoveLeftAndRight : MonoBehaviour
 	private bool pressedLeftLast = false;
 	private bool pressedRightLast = false;
 	private bool buttonPressed = false;
-	private bool isDashing = false;
+
+	private static bool isDashing = false;
+	private static float dashDirection = 1.0f;
+	private static float t = 0.0f;
 
 	// Use this for initialization
 	void Start ()
 	{
+		if(isDashing)
+		{
+			StartCoroutine(Dash(dashSpeed*dashDirection));
+		}
 	}
 	
 	// Update is called once per frame
@@ -25,75 +32,62 @@ public class MoveLeftAndRight : MonoBehaviour
 		//This moves our object left or right based on keyboardinput
 		transform.position += Vector3.right*Input.GetAxis("Horizontal")*speed*Time.deltaTime;
 
-		if(!isDashing)
+		if(PseudoInput.Instance.leftPressed)
 		{
-			if(PseudoInput.Instance.leftPressed)
+			if(pressedLeftLast && !buttonPressed && lastTap <= doubleTapSpeed)
 			{
-				if(pressedLeftLast && !buttonPressed && lastTap <= doubleTapSpeed)
-				{
-					//Dash
-					Debug.Log("DashLeft");
-					StartCoroutine(DashLeft());
-					buttonPressed = true;
-				}
-				else
-				{
-					transform.position += Vector3.left*speed*Time.deltaTime;
-					lastTap = 0.0f;
-					pressedLeftLast = true;
-					pressedRightLast = false;
-					buttonPressed = true;
-				}
+				//Dash
+				Debug.Log("DashLeft");
+				t = 0.0f;
+				dashDirection = -1.0f;
+				StartCoroutine(Dash(dashSpeed*dashDirection));
+				buttonPressed = true;
 			}
-			if(PseudoInput.Instance.rightPressed)
+			else if(!isDashing)
 			{
-				if(pressedRightLast && !buttonPressed && lastTap <= doubleTapSpeed)
-				{
-					//Dash
-					Debug.Log("DashRight");
-					StartCoroutine(DashRight());
-					buttonPressed = true;
-				}
-				else
-				{
-					transform.position += Vector3.right*speed*Time.deltaTime;
-					lastTap = 0.0f;
-					pressedRightLast = true;
-					pressedLeftLast = false;
-					buttonPressed = true;
-				}
+				transform.position += Vector3.left*speed*Time.deltaTime;
+				lastTap = 0.0f;
+				pressedLeftLast = true;
+				pressedRightLast = false;
+				buttonPressed = true;
 			}
-			if(!PseudoInput.Instance.rightPressed && !PseudoInput.Instance.leftPressed)
-			{
-				buttonPressed = false;
-			}
-			lastTap += Time.deltaTime;
 		}
+		if(PseudoInput.Instance.rightPressed)
+		{
+			if(pressedRightLast && !buttonPressed && lastTap <= doubleTapSpeed)
+			{
+				//Dash
+				Debug.Log("DashRight");
+				t = 0.0f;
+				dashDirection = 1.0f;
+				StartCoroutine(Dash(dashSpeed*dashDirection));
+				buttonPressed = true;
+			}
+			else if(!isDashing)
+			{
+				transform.position += Vector3.right*speed*Time.deltaTime;
+				lastTap = 0.0f;
+				pressedRightLast = true;
+				pressedLeftLast = false;
+				buttonPressed = true;
+			}
+		}
+		if(!PseudoInput.Instance.rightPressed && !PseudoInput.Instance.leftPressed)
+		{
+			buttonPressed = false;
+		}
+		lastTap += Time.deltaTime;
+
+		t += Time.deltaTime;
 	}
 
-	IEnumerator DashLeft()
+	IEnumerator Dash(float speed)
 	{
-		float t = 0.0f;
 		isDashing = true;
 
 		while(t <= dashDuration)
 		{
-			transform.position += Vector3.left*dashSpeed*Time.deltaTime;
-			t += Time.deltaTime;
-			yield return null;
-		}
-		isDashing = false;
-	}
-
-	IEnumerator DashRight()
-	{
-		float t = 0.0f;
-		isDashing = true;
-		
-		while(t <= dashDuration)
-		{
-			transform.position += Vector3.right*dashSpeed*Time.deltaTime;
-			t += Time.deltaTime;
+			transform.position += Vector3.right*speed*Time.deltaTime;
 			yield return null;
 		}
 		isDashing = false;
