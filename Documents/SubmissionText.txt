@@ -1,6 +1,9 @@
 Game Title:
 GridCruiser
 
+Short-Short Description:
+Survive for as long as you can before the pillars of fate destroy you!
+
 Short Description:
 As a cube trapped in a cruel infinite cyberprison, you must survive as long as possible before the pillars of fate destroy you in a spectacular fashion!
 
@@ -28,3 +31,8 @@ Arcade, Action, Infinite Runner
 
 Rating:
 	As open as possible
+
+
+Notes:
+
+Android would like the following icons:
