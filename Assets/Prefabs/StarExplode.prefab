@@ -1133,8 +1133,8 @@ ParticleSystem:
     particleRadius: .00999999978
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
-    quality: 0
+      m_Bits: 32768
+    quality: 1
     voxelSize: .5
     collisionMessages: 0
   SubModule:

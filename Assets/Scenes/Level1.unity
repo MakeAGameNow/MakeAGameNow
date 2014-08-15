@@ -855,7 +855,7 @@ GameObject:
   - 114: {fileID: 1076580366}
   - 114: {fileID: 1076580365}
   - 65: {fileID: 1076580369}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: GroundGrid8
   m_TagString: Untagged
   m_Icon: {fileID: 0}

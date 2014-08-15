@@ -184,7 +184,7 @@ AudioSource:
   MinDistance: 10
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bdbac552e66c40f09e0a75f6893b073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyValue: -5
+  destroyValue: -20
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
