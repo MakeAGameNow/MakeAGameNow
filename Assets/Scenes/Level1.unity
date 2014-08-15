@@ -164,6 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ee1fbe2b2f84d9bbd80e6f4632c5e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchableLayers:
+    serializedVersion: 2
+    m_Bits: 16384
 --- !u!4 &173583877
 Transform:
   m_ObjectHideFlags: 0
@@ -1400,7 +1403,7 @@ GameObject:
   - 4: {fileID: 1887540567}
   - 65: {fileID: 1887540566}
   - 114: {fileID: 1887540565}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: LeftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1453,7 +1456,7 @@ GameObject:
   - 4: {fileID: 1911140582}
   - 65: {fileID: 1911140581}
   - 114: {fileID: 1911140580}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: RightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
