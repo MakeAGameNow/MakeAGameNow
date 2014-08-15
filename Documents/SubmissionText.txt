@@ -24,7 +24,7 @@ Support Email:
 support@makeagamenow.com
 
 Keywords:
-Infinite runner, 3d, arcade, retro, cyberspace, collision avoidance, rail shooter, on rails, learn game development
+Infinite runner,3d,arcade,retro,cyberspace,collision avoidance,rail shooter,learn game development
 
 Category (May be subject to change based on publisher settings:
 Arcade, Action, Infinite Runner
