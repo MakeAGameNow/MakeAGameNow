@@ -43,7 +43,6 @@ public class PseudoMoveLeftAndRight : MonoBehaviour
 			if(pressedLeftLast && !buttonPressed && lastTap <= doubleTapSpeed)
 			{
 				//Dash
-				Debug.Log("DashLeft");
 				t = Time.time;
 				dashDirection = -1.0f;
 				StopAllCoroutines();
@@ -64,7 +63,6 @@ public class PseudoMoveLeftAndRight : MonoBehaviour
 			if(pressedRightLast && !buttonPressed && lastTap <= doubleTapSpeed)
 			{
 				//Dash
-				Debug.Log("DashRight");
 				t = Time.time;
 				dashDirection = 1.0f;
 				StopAllCoroutines();
