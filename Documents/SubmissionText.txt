@@ -10,7 +10,7 @@ As a cube trapped in a cruel infinite cyberprison, you must survive as long as p
 Long Description:
 As a cube trapped in a cruel infinite cyberprison, you must survive as long as possible before the pillars of fate destroy you in a spectacular fashion!  Collect stars for some reason.  Points I guess.  Points are GOOD.  (Cylinders are BAD!)
 
-Tap the left or right side of the screen to move left or right.  Double-tap either side of the screen to uncontrollably dash momentarily in that direction
+Tap the left or right side of the screen to move left or right.  Double-tap either side of the screen to uncontrollably dash momentarily in that direction.
 
 This game was created in real-time on the show Cooking With Unity!  Please go to http://www.CookingWithUnity.com if you want to find out how to make and publish your own games like this one!
 
