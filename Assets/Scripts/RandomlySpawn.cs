@@ -12,6 +12,8 @@ public class RandomlySpawn : MonoBehaviour
 	public float minSpawnTime = 1.0f;
 	public float maxSpawnTime = 1.0f;
 
+	public float spawnsPerSpeedUnit = 0.1f;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -20,7 +22,10 @@ public class RandomlySpawn : MonoBehaviour
 	
 	void SpawnNow()
 	{
-		Instantiate(thingie, transform.position + new Vector3(Random.Range(minHorizontal,maxHorizontal),Random.Range(minVertical,maxVertical)), Quaternion.identity);
+		for(int i = (int)(spawnsPerSpeedUnit*GameManager.Instance.gameSpeed); i > 0; i--)
+		{
+			Instantiate(thingie, transform.position + new Vector3(Random.Range(minHorizontal,maxHorizontal),Random.Range(minVertical,maxVertical)), Quaternion.identity);
+		}
 		Invoke ("SpawnNow", Random.Range(minSpawnTime, maxSpawnTime));
 	}
 }

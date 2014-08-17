@@ -5,24 +5,22 @@ public class PlaySoundOnInput : MonoBehaviour
 {
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+	{
+		audio.volume = 0.0f;
+		audio.Play ();
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		//This moves our object left or right based on keyboardinput
 		if(Input.GetAxis("Horizontal") != 0.0f || PseudoInput.Instance.leftPressed || PseudoInput.Instance.rightPressed)
 		{
-			if(!audio.isPlaying)
-			{
-				audio.Play();
-			}
+			audio.volume = 1.0f;
 		}
 		else
 		{
-			audio.Stop();
+			audio.volume = 0.0f;
 		}
 	}
 }
