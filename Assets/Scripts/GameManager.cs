@@ -198,7 +198,6 @@ public class GameManager : MonoBehaviour
 		//if(Application.platform = RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.LinuxPlayer || Application.platform == RuntimePlatform.MetroPlayerX64 || Application.platform == RuntimePlatform.MetroPlayerX86 || Application.platform == RuntimePlatform.WindowsPlayer 
 		if(Application.platform == RuntimePlatform.IPhonePlayer ||
 		    Application.platform == RuntimePlatform.Android ||
-		    Application.platform == RuntimePlatform.BlackBerryPlayer ||
 		    Application.platform == RuntimePlatform.MetroPlayerARM)
 		{
 			return true;
