@@ -3,8 +3,11 @@ using System.Collections;
 
 public class FogBeat : MonoBehaviour
 {
+	public int samples = 64;
+	public int channel = 0;
 	public int frequencyChannel = 32;
 	public float amplitudeMultiplier = 1.0f;
+	public FFTWindow window;
 
 	private float originalFogDensity;
 
@@ -17,6 +20,8 @@ public class FogBeat : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		RenderSettings.fogDensity = originalFogDensity + SpectrumData.Instance.data[frequencyChannel]*amplitudeMultiplier;
+		float[] data = new float[samples];
+		AudioListener.GetSpectrumData (data, channel, window);
+		RenderSettings.fogDensity = originalFogDensity + data[frequencyChannel]*amplitudeMultiplier;
 	}
 }

@@ -349,9 +349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  dashSpeed: 2
-  dashDuration: 1
-  doubleTapSpeed: .5
 --- !u!114 &115864995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,8 +541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
-  scoreValue: 0
-  destroyTarget: {fileID: 0}
 --- !u!54 &586729070
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -650,8 +645,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
-  scoreValue: 0
-  destroyTarget: {fileID: 0}
 --- !u!54 &699547151
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -756,8 +749,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
-  scoreValue: 0
-  destroyTarget: {fileID: 0}
 --- !u!54 &751096075
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -950,8 +941,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
-  scoreValue: 0
-  destroyTarget: {fileID: 0}
 --- !u!54 &1181416427
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1056,8 +1045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
-  scoreValue: 0
-  destroyTarget: {fileID: 0}
 --- !u!54 &1337603759
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1206,8 +1193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
-  scoreValue: 0
-  destroyTarget: {fileID: 0}
 --- !u!54 &1492889863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1312,8 +1297,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
-  scoreValue: 0
-  destroyTarget: {fileID: 0}
 --- !u!54 &1516525808
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1418,8 +1401,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
-  scoreValue: 0
-  destroyTarget: {fileID: 0}
 --- !u!54 &1538636913
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1612,8 +1593,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f84c42c8bca5b4276a7a0b73697bb0a5, type: 2}
-  scoreValue: 0
-  destroyTarget: {fileID: 0}
 --- !u!54 &1906156021
 Rigidbody:
   m_ObjectHideFlags: 0

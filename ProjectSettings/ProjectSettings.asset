@@ -10,8 +10,8 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: MakeAGameNow
-  productName: GridCruiser
+  companyName: DefaultCompany
+  productName: MakeAGameNow
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
@@ -64,7 +64,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  iPhoneBundleIdentifier: com.makeagamenow.gridcruiser
+  iPhoneBundleIdentifier: com.makeagamenow.makeagamenow
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   productGUID: 516f73fca90c744a0b5cc8fbbddb86e6
@@ -97,14 +97,13 @@ PlayerSettings:
   iPadHighResLandscapeSplashScreen: {fileID: 0}
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
-  AndroidKeystoreName: user.keystore
-  AndroidKeyaliasName: gridcruiser
-  resolutionDialogBanner: {fileID: 2800000, guid: e9f74b9e94c424af884d8f3db16551c5,
-    type: 3}
+  AndroidKeystoreName: 
+  AndroidKeyaliasName: 
+  resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: 5b89c5cfdf0ad43d6b794e5a5f4bb177, type: 3}
+    - m_Icon: {fileID: 0}
       m_Size: 128
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
