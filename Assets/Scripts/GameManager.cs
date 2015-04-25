@@ -25,24 +25,19 @@ public class GameManager : MonoBehaviour
 
 	public float pointsPerUnitTravelled = 1.0f;
 	public float gameSpeed = 10.0f;
-	public float gameSpeedIncreasePerSecond = 1.0f;
 	public string titleScreenName = "TitleScreen";
 	public string highScoresScreenName = "HighScores";
 
 	[HideInInspector]
 	public int previousScore = 0;
 
-	[HideInInspector]
-	public float score = 0.0f;
-	public static float highScore = 0.0f;
+	private float score = 0.0f;
+	private static float highScore = 0.0f;
 
 	private List<int> highScores = new List<int>();
 
-	[HideInInspector]
-	public bool gameOver = false;
-
+	private bool gameOver = false;
 	private bool hasSaved = false;
-	private float initialGameSpeed;
 
 	// Use this for initialization
 	void Start ()
@@ -59,7 +54,6 @@ public class GameManager : MonoBehaviour
 			}
 		}
 		LoadHighScore();
-		initialGameSpeed = gameSpeed;
 		DontDestroyOnLoad(gameObject);
 	}
 	
@@ -67,8 +61,7 @@ public class GameManager : MonoBehaviour
 	void Update ()
 	{
 		if(Application.loadedLevelName != titleScreenName &&
-		   Application.loadedLevelName != highScoresScreenName &&
-		   Application.loadedLevelName != "Credits")
+		   Application.loadedLevelName != highScoresScreenName)
 		{
 			if(GameObject.FindGameObjectWithTag("Player") == null)
 			{
@@ -112,7 +105,6 @@ public class GameManager : MonoBehaviour
 				{
 					highScore = score;
 				}
-				gameSpeed += gameSpeedIncreasePerSecond * Time.deltaTime;
 			}
 		}
 		else
@@ -127,7 +119,6 @@ public class GameManager : MonoBehaviour
 		score = 0.0f;
 		gameOver = false;
 		hasSaved = false;
-		gameSpeed = initialGameSpeed;
 	}
 
 	void SaveHighScore()
@@ -170,16 +161,13 @@ public class GameManager : MonoBehaviour
 		{
 			highScores.Add(PlayerPrefs.GetInt("HighScore" + i.ToString()));
 		}
-
-		highScore = PlayerPrefs.GetInt ("HighScore0");
 	}
 
 	void OnGUI()
 	{
 		/*
 		if(Application.loadedLevelName != titleScreenName &&
-		   Application.loadedLevelName != highScoresScreenName &&
-		   Application.loadedLevelName != "Credits")
+		   Application.loadedLevelName != highScoresScreenName)
 		{
 			int currentScore = (int)score;
 			int currentHighScore = (int)highScore;
